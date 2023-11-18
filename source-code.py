@@ -99,3 +99,24 @@ def modify():
         for a in L: 
             pickle.dump(a,file) 
         file.close()
+
+
+
+#  [-- DELETE --]  FUNCTION 
+
+def delete():
+    import pickle 
+    file = open('User Database.dat','rb+') 
+    L = [] 
+    m = int(input("Enter Employee Number to be deleted : ")) 
+    try: 
+        while True:
+            d = pickle.load(file) 
+            if m != d['Employee No.']:
+                L.append(d) 
+    except : 
+        file.seek(0) 
+        file.truncate(0) 
+    for a in L: 
+        pickle.dump(a,file) 
+    file.close()
