@@ -120,3 +120,29 @@ def delete():
     for a in L: 
         pickle.dump(a,file) 
     file.close()
+
+
+
+#  CALLING  STATEMENTS
+ 
+while True: 
+    print('-'*70) # symbols used for separating 
+    print("1-Create\n2-Display\n3-Search\n4-Modify\n5-Delete\n6-Append\n7-Exit") 
+    ch = int(input("Enter your Choice ")) 
+    print('-'*70) # symbols used for separating 
+    if ch==1: 
+        write() 
+    elif ch==2: 
+        read() 
+    elif ch==3: 
+        search() 
+    elif ch==4: 
+        modify() 
+    elif ch==5: 
+        delete() 
+    elif ch==6: 
+        append() 
+    elif ch==7: 
+        break
+    else: 
+        print("Invalid Choice")
