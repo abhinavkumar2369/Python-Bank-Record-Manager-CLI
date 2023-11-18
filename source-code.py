@@ -35,3 +35,20 @@ def write():
         pickle.dump(data,file)
         print("-"*5)
     file.close() 
+
+
+
+#  [-- APPENDING --]  FUNCTION
+
+def append(): 
+    import pickle 
+    file = open('User Database.dat','ab') 
+    n = int(input("How many user data you want to enter ? ")) 
+    data = {} 
+    for a in range(n): 
+        data['Employee No.'] = int(input("Enter Employee Number : ")) 
+        data['Name'] = input("Enter Employee Name : ") 
+        data['Department'] = input("Enter Department : ") 
+        data['Salary'] = int(input("Salary : ")) 
+        pickle.dump(data,file) 
+    file.close() 
