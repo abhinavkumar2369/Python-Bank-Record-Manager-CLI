@@ -52,3 +52,23 @@ def append():
         data['Salary'] = int(input("Salary : ")) 
         pickle.dump(data,file) 
     file.close() 
+
+
+
+#  [-- SEARCHING --]  FUNCTION
+ 
+def search(): 
+    import pickle 
+    file = open('User Database.dat','rb') 
+    found = 0 
+    h = int(input("Enter Employee Number : ")) 
+    try : 
+        while True:
+            d = pickle.load(file) 
+            if h == d['Employee No.']: 
+                print(d) 
+                found = found + 1 
+    except: 
+        if found == 0: 
+            print("Sorry,\n No record found with Employee Number : ",h) 
+    file.close()
