@@ -72,3 +72,30 @@ def search():
         if found == 0: 
             print("Sorry,\n No record found with Employee Number : ",h) 
     file.close()
+
+
+
+#  [-- DATA MODIFY --]  FUNCTION
+
+def modify(): 
+    import pickle 
+    file = open('User Database.dat','rb+') 
+    h = int(input("Enter Employee Number : ")) 
+    found = 0 
+    L = []
+    try:
+        while True:
+            d = pickle.load(file)
+            if h == d['Employee No.']: 
+                sal = int(input("Enter new salary : ")) 
+                d['Salary']=sal 
+                found += 1 
+            L.append(d) 
+    except:
+        if found == 0:
+            print("No user to modify ") 
+        file.seek(0) 
+        file.truncate(0) 
+        for a in L: 
+            pickle.dump(a,file) 
+        file.close()
