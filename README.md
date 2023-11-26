@@ -6,12 +6,37 @@ Just open Command prompt in the directory you want to clone & copy & run the com
 ```
 git clone https://github.com/abhinavkumar2369/python-bank-record-manager-cli.git
 ```
+
 ## Functions  In Program --
-|Func() | Overview |
-|--|--|
-| Read  | Display all the Employee Records |
-| Write  | New Employee Details entry [Delete All old data , if any] |
-| Append | Add new Employee Records [In Pre-existed data] |
-| Search  | Search for Employee Record |
-| Modify  | Modify the Record [ User Record must pre-exist ] |
-| Delete | Delete the record of any particular Employee |
+
+```sh
+Read()
+  Display all the Employee Records
+```
+
+```sh
+Write()
+  Add Employee Details record(s)  [Delete All old data , if any]
+```
+
+```sh
+Append()
+  Add new Employee Records [In Pre-existed data]
+```
+
+```sh
+Search()
+  Search for Employee Record
+```
+
+```sh
+Modify()
+  Modify the Record [ User Record must pre-exist ]
+```
+
+```sh
+Delete()
+  Delete the record of any particular Employee
+```
+
+>   Thank You 😊
