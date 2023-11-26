@@ -1,5 +1,5 @@
 # 🏦💵💱 BANK RECORD MANAGER CLI⌨️
-This program is develop using Python programming language version 3.5 and pickle moduele, intregrated with binary file for reading and writing content.
+This program is develop using Python programming language version 3.5 and pickle module, intregrated with binary file for reading and writing content.
 
 ## GIT  Repository Clone :
 Just open Command prompt in the directory you want to clone & copy & run the command --
